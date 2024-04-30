@@ -43,3 +43,31 @@ body {
 .featured-items-container .item img {
   width: 100%; /* Make images fill the container */
 }
+
+/* CSS for featured items section */
+#featured-items {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background color */
+  margin-bottom: 20px; /* Add some space between sections */
+}
+
+.featured-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.featured-item {
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+}
+
+.featured-item img {
+  width: 100%;
+  height: auto;
+}
+
+.featured-item p {
+  margin: 5px 0;
+}
