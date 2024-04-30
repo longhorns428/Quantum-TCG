@@ -1,0 +1,318 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header Style */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Section Styles */
+main {
+  padding: 50px 0; /* Add some padding for better spacing */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+section {
+  padding: 40px;
+  margin-bottom: 40px;
+  background-color: #fff; /* White background color for sections */
+  border-radius: 10px; /* Rounded corners for sections */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Box shadow for sections */
+  text-align: center; /* Center the text */
+}
+
+section h2 {
+  font-size: 2rem; /* Larger font size for section headings */
+  color: #333; /* Dark text color for headings */
+}
+
+section p {
+  font-size: 1.2rem; /* Medium font size for section paragraphs */
+  color: #666; /* Medium text color for paragraphs */
+}
+
+section:hover {
+  transform: translateY(-5px); /* Move sections up slightly on hover */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+/* About Us Section Styles */
+#about-us {
+  background-color: #f5f5f5; /* Light background color */
+  padding: 50px 0; /* Add padding for spacing */
+  text-align: center; /* Center align the content */
+}
+
+#about-us .container {
+  max-width: 800px; /* Limit the width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+#about-us h2 {
+  font-size: 2rem; /* Larger font size for heading */
+  color: #333; /* Dark text color */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+#about-us p {
+  font-size: 1.2rem; /* Medium font size for paragraphs */
+  color: #666; /* Medium text color */
+  margin-bottom: 20px; /* Add space below paragraphs */
+}
+
+.social-media {
+  list-style: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.social-media li {
+  display: inline-block; /* Display social media links horizontally */
+  margin-right: 20px; /* Add space between social media links */
+}
+
+.social-media li:last-child {
+  margin-right: 0; /* Remove margin from the last social media link */
+}
+
+.social-media a {
+  display: inline-block; /* Make social media links block-level */
+  text-decoration: none; /* Remove underline from social media links */
+  padding: 10px 20px; /* Add padding to social media links */
+  border-radius: 20px; /* Add rounded corners to social media links */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  font-size: 1.2rem; /* Medium font size for social media links */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.social-media a:hover {
+  background-color: #0056b3; /* Darker blue background color on hover */
+}
+
+/* Featured Items Section Styles */
+.featured-items {
+  background-color: #fff; /* White background color */
+  padding: 50px 0; /* Add padding for spacing */
+  text-align: center; /* Center align the content */
+}
+
+.featured-items h2 {
+  font-size: 2rem; /* Larger font size for heading */
+  color: #333; /* Dark text color */
+  margin-bottom: 20px; /* Add space below the heading */
+}
+
+.item-container {
+  display: flex; /* Display items in a row */
+  justify-content: center; /* Center items horizontally */
+  flex-wrap: wrap; /* Wrap items to new line if space is insufficient */
+  gap: 20px; /* Add space between items */
+}
+
+.item {
+  flex: 0 1 200px; /* Set flex basis to control item width */
+  background-color: #f5f5f5; /* Light background color for items */
+  padding: 20px; /* Add padding for spacing */
+  border-radius: 10px; /* Add rounded corners to items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  text-align: center; /* Center align the content */
+}
+
+.item img {
+  max-width: 100%; /* Ensure images don't exceed container width */
+}
+
+.item p {
+  font-size: 1.2rem; /* Medium font size for item text */
+  color: #666; /* Medium text color */
+  margin-top: 10px; /* Add space above item text */
+}
+
+/* Pokémon Section Styles */
+#pokemon {
+  position: relative; /* Set position to relative to allow absolute positioning of text */
+  background-image: url("./img/pokemon-cards.jpg");
+  background-size: contain;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+}
+
+#pokemon .content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  padding: 20px; /* Add padding to the content */
+  border-radius: 10px; /* Add rounded corners to the overlay block */
+}
+
+#pokemon h2,
+#pokemon p {
+  color: #333; /* Set text color to white */
+}
+
+#pokemon h2 a {
+  color: #333; /* Set link color to white */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+#pokemon h2 a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Magic Section Styles */
+#magic {
+  position: relative;
+  background-image: url("./img/magic-tcg.jpg");
+  background-size: contain;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+}
+#magic .content {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  padding: 20px; /* Add padding to the content */
+  border-radius: 10px; /* Add rounded corners to the overlay block */
+}
+
+#magic h2,
+#magic p {
+  color: #fff; /* Set text color to white */
+}
+
+#magic h2 a {
+  color: #fff; /* Set link color to white */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+#magic h2 a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Contact Style */
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-top: 50px; /* Add margin from the top to center the container vertically */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Footer Style */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.about,
+.menu {
+  width: 45%;
+}
+
+.about h3,
+.menu h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.about p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+}
+
+.menu ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.menu ul li a:hover {
+  color: #fff;
+}
