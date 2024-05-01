@@ -214,6 +214,118 @@ section:hover {
   text-decoration: underline; /* Add underline on hover */
 }
 
+/* Home Page */
+/* Add your CSS styles here */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+img {
+  max-width: 100px;
+  height: auto;
+}
+.add-to-cart-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Add your CSS styles here */
+.calendar {
+  width: 300px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.month {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.days {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.days th,
+.days td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.days th {
+  background-color: #f2f2f2;
+}
+
+.days td {
+  cursor: pointer;
+}
+
+.days td:hover {
+  background-color: #f0f0f0;
+}
+
+/* Styles for the popup */
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.highlight {
+  background-color: rgb(
+    170,
+    180,
+    34
+  ); /* Change the background color to highlight */
+}
+
 /* Contact Style */
 .container {
   width: 80%;

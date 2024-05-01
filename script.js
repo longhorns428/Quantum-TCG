@@ -1,52 +1,30 @@
-// Define an array of featured items
-const featuredItems = [
-    { name: "Item 1", price: "$10", imageUrl: "./img/item1.jpg" },
-    { name: "Item 2", price: "$20", imageUrl: "./img/item2.jpg" },
-    { name: "Item 3", price: "$15", imageUrl: "./img/item3.jpg" }
-  ];
-  
-  // Function to populate featured items in the DOM
-  function populateFeaturedItems() {
-    const container = document.querySelector('.featured-items-container');
-    container.innerHTML = ''; // Clear previous content
-  
-    featuredItems.forEach(item => {
-      const itemElement = document.createElement('div');
-      itemElement.classList.add('featured-item');
-  
-      const imageElement = document.createElement('img');
-      imageElement.src = item.imageUrl;
-      itemElement.appendChild(imageElement);
-  
-      const nameElement = document.createElement('p');
-      nameElement.textContent = item.name;
-      itemElement.appendChild(nameElement);
-  
-      const priceElement = document.createElement('p');
-      priceElement.textContent = item.price;
-      itemElement.appendChild(priceElement);
-  
-      container.appendChild(itemElement);
-    });
+// Function to show pop-up message
+function showMessage(day) {
+    var popupMessage = ""; // Initialize the message variable
+    
+    // Switch case to set different messages based on the clicked day
+    switch (day) {
+      case 1:
+        popupMessage = "Its Gonna Be May";
+        break;
+      case 2:
+        popupMessage = "Message for day 2";
+        break;
+      // Add more cases for other days as needed
+      default:
+        popupMessage = "No message for this day";
+        break;
+    }
+    
+    // Set the message content in the pop-up
+    document.getElementById("popup-message").innerText = popupMessage;
+    
+    // Display the pop-up
+    document.getElementById("popup").style.display = "block";
   }
   
-  // Function to rotate featured items
-  function rotateFeaturedItems() {
-    const items = document.querySelectorAll('.featured-item');
-    const firstItem = items[0];
-  
-    // Rotate the items
-    firstItem.style.opacity = '0';
-    setTimeout(() => {
-      firstItem.remove();
-      document.querySelector('.featured-items-container').appendChild(firstItem);
-      firstItem.style.opacity = '1';
-    }, 1000); // Change item every 1 second (adjust as needed)
+  // Function to close the pop-up
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
   }
-  
-  // Populate featured items initially
-  populateFeaturedItems();
-  
-  // Rotate featured items at intervals
-  setInterval(rotateFeaturedItems, 5000); // Rotate every 3 seconds (adjust as needed)
   
