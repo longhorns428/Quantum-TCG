@@ -27,4 +27,22 @@ function showMessage(day) {
   function closePopup() {
     document.getElementById("popup").style.display = "none";
   }
-  
+ 
+
+  // JavaScript for "Back to Top" button
+  const backToTopButton = document.querySelector(".back-to-top");
+
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 300) {
+      // Show the button when page is scrolled down
+      backToTopButton.style.display = "block";
+    } else {
+      // Hide the button when at the top of the page
+      backToTopButton.style.display = "none";
+    }
+  });
+
+  backToTopButton.addEventListener("click", () => {
+    // Scroll the page to the top smoothly
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });

@@ -18,7 +18,7 @@
         </ul>
       </nav>
     </header>
-
+    <a href="#" class="back-to-top">Back to Top</a>
     <main>
       <section id="upcoming-releases">
         <h2>Upcoming Releases</h2>
@@ -29,6 +29,15 @@
         <div id="calendar">
           <div class="month">
             <h2>May 2024</h2>
+            <!-- Key for colors -->
+            <div id="color-key">
+              <h3>Color Key:</h3>
+              <div class="color-box" style="background-color: #2414db"></div>
+              <span>Category 1</span>
+              <div class="color-box" style="background-color: #ffa200"></div>
+              <span>Category 2</span>
+              <!-- Add more color boxes and labels as needed -->
+            </div>
           </div>
           <table class="days">
             <tr>
@@ -45,10 +54,12 @@
               <td></td>
               <td></td>
               <td onclick="showMessage(1)">1</td>
-              <td onclick="showMessage(2)"" class="highlight">2</td>
+              <td onclick="showMessage(2)">2</td>
               <td onclick="showMessage(3)">3</td>
               <td onclick="showMessage(4)">4</td>
             </tr>
+            <!--             class="highlight"
+ -->
             <tr>
               <td onclick="showMessage(5)">5</td>
               <td onclick="showMessage(6)">6</td>
@@ -58,6 +69,7 @@
               <td onclick="showMessage(10)">10</td>
               <td onclick="showMessage(11)">11</td>
             </tr>
+
             <tr>
               <td onclick="showMessage(12)">12</td>
               <td onclick="showMessage(13)">13</td>
@@ -83,7 +95,7 @@
               <td onclick="showMessage(29)">29</td>
               <td onclick="showMessage(30)">30</td>
               <td onclick="showMessage(31)">31</td>
-              <td onclick="showMessage(31)">31</td>
+              <td></td>
             </tr>
             <!-- Add more rows for other weeks -->
             <!-- Remember to adjust the number of days per month and the starting day of the week accordingly -->
@@ -100,9 +112,8 @@
         <script src="script.js"></script>
       </section>
       <section id="featured-items">
-        <h2>Featured Items</h2>
         <div class="featured-items-container">
-          <h2>Top 5 Items Of The Month</h2>
+          <h2>Top Selling Items</h2>
           <table>
             <thead>
               <tr>
@@ -115,10 +126,7 @@
             <tbody>
               <tr>
                 <td>
-                  <img
-                    src="Legendary-Loot-Emporium/img/kaladeshBP.jpg"
-                    alt="Kaladesh Booster Pack"
-                  />
+                  <img src="./img/kaladeshBP.jpg" alt="Kaladesh Booster Pack" />
                 </td>
                 <td>Kaladesh Booster Pack</td>
                 <td>$5.99</td>
@@ -126,10 +134,7 @@
               </tr>
               <tr>
                 <td>
-                  <img
-                    src="Legendary-Loot-Emporium/img/BB151.jpg"
-                    alt="Japanese 151 Booster Pack"
-                  />
+                  <img src="./img/BB151.jpg" alt="Japanese 151 Booster Pack" />
                 </td>
                 <td>Japanese 151 Booster Pack</td>
                 <td>$7.99</td>
@@ -138,7 +143,7 @@
               <tr>
                 <td>
                   <img
-                    src="Legendary-Loot-Emporium/img/BBOBFlames.jpg"
+                    src="./img/BBOBFlames.jpg"
                     alt="Obsidian Flame Booster Pack"
                   />
                 </td>
@@ -155,21 +160,21 @@
 
     <footer>
       <div class="footer-content">
-        <div class="about">
-          <h3>About Us</h3>
-          <p>
-            We are Legendary Loot Emporium, your one-stop shop for all things
-            trading card games. Our mission is to provide the best selection of
-            cards and accessories to our customers.
-          </p>
+        <div class="copyright">
+          <p>&copy; 2024 Legendary Loot Emporium. All rights reserved.</p>
         </div>
-        <div class="menu">
-          <h3>Menu</h3>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
+
+        <div class="back-to-top">
+          <a href="#" class="back-to-top-link">Back to Top</a>
+        </div>
+
+        <div class="social-media">
+          <a href="https://facebook.com/YourPage" target="_blank"
+            ><i class="fab fa-facebook">Facebook</i></a
+          >
+          <a href="https://instagram.com/YourPage" target="_blank"
+            ><i class="fab fa-instagram">Instagram</i></a
+          >
         </div>
       </div>
     </footer>
