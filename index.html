@@ -3,180 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legendary Loot Emporium</title>
+    <title>Trading Cards Website</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
-      <h1>Legendary Loot Emporium</h1>
       <nav>
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cards.html">Cards</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
       </nav>
     </header>
-    <a href="#" class="back-to-top">Back to Top</a>
-    <main>
-      <section id="upcoming-releases">
-        <h2>Upcoming Releases</h2>
-        <p>
-          Stay tuned for the latest releases from Pokemon and Magic The
-          Gathering!
-        </p>
-        <div id="calendar">
-          <div class="month">
-            <h2>May 2024</h2>
-            <!-- Key for colors -->
-            <div id="color-key">
-              <h3>Color Key:</h3>
-              <div class="color-box" style="background-color: #2414db"></div>
-              <span>Category 1</span>
-              <div class="color-box" style="background-color: #ffa200"></div>
-              <span>Category 2</span>
-              <!-- Add more color boxes and labels as needed -->
-            </div>
-          </div>
-          <table class="days">
-            <tr>
-              <th>Sun</th>
-              <th>Mon</th>
-              <th>Tue</th>
-              <th>Wed</th>
-              <th>Thu</th>
-              <th>Fri</th>
-              <th>Sat</th>
-            </tr>
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td onclick="showMessage(1)">1</td>
-              <td onclick="showMessage(2)">2</td>
-              <td onclick="showMessage(3)">3</td>
-              <td onclick="showMessage(4)">4</td>
-            </tr>
-            <!--             class="highlight"
- -->
-            <tr>
-              <td onclick="showMessage(5)">5</td>
-              <td onclick="showMessage(6)">6</td>
-              <td onclick="showMessage(7)">7</td>
-              <td onclick="showMessage(8)">8</td>
-              <td onclick="showMessage(9)">9</td>
-              <td onclick="showMessage(10)">10</td>
-              <td onclick="showMessage(11)">11</td>
-            </tr>
-
-            <tr>
-              <td onclick="showMessage(12)">12</td>
-              <td onclick="showMessage(13)">13</td>
-              <td onclick="showMessage(14)">14</td>
-              <td onclick="showMessage(15)">15</td>
-              <td onclick="showMessage(16)">16</td>
-              <td onclick="showMessage(17)">17</td>
-              <td onclick="showMessage(18)">18</td>
-            </tr>
-            <tr>
-              <td onclick="showMessage(19)">19</td>
-              <td onclick="showMessage(20)">20</td>
-              <td onclick="showMessage(21)">21</td>
-              <td onclick="showMessage(22)">22</td>
-              <td onclick="showMessage(23)">23</td>
-              <td onclick="showMessage(24)">24</td>
-              <td onclick="showMessage(25)">25</td>
-            </tr>
-            <tr>
-              <td onclick="showMessage(26)">26</td>
-              <td onclick="showMessage(27)">27</td>
-              <td onclick="showMessage(28)">28</td>
-              <td onclick="showMessage(29)">29</td>
-              <td onclick="showMessage(30)">30</td>
-              <td onclick="showMessage(31)">31</td>
-              <td></td>
-            </tr>
-            <!-- Add more rows for other weeks -->
-            <!-- Remember to adjust the number of days per month and the starting day of the week accordingly -->
-          </table>
-        </div>
-
-        <div id="popup" class="popup">
-          <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <p id="popup-message"></p>
-          </div>
-        </div>
-
-        <script src="script.js"></script>
-      </section>
-      <section id="featured-items">
-        <div class="featured-items-container">
-          <h2>Top Selling Items</h2>
-          <table>
-            <thead>
-              <tr>
-                <th>Image</th>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="./img/kaladeshBP.jpg" alt="Kaladesh Booster Pack" />
-                </td>
-                <td>Kaladesh Booster Pack</td>
-                <td>$5.99</td>
-                <td><button class="add-to-cart-btn">Add to Cart</button></td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="./img/BB151.jpg" alt="Japanese 151 Booster Pack" />
-                </td>
-                <td>Japanese 151 Booster Pack</td>
-                <td>$7.99</td>
-                <td><button class="add-to-cart-btn">Add to Cart</button></td>
-              </tr>
-              <tr>
-                <td>
-                  <img
-                    src="./img/BBOBFlames.jpg"
-                    alt="Obsidian Flame Booster Pack"
-                  />
-                </td>
-                <td>Obsidian Flame Booster Pack</td>
-                <td>$9.99</td>
-                <td><button class="add-to-cart-btn">Add to Cart</button></td>
-              </tr>
-              <!-- Add more items as needed -->
-            </tbody>
-          </table>
-        </div>
-      </section>
-    </main>
+    <div class="carousel">
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <div class="slides">
+        <img src="./img/BB151.jpg" alt="Image 1" />
+        <img src="./img/BBOBFlames.jpg" alt="Image 2" />
+        <img src="./img/kaladeshBP.jpg" alt="Image 3" />
+      </div>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <script src="script.js"></script>
+    <div class="hero">
+      <h1>Welcome to Trading Cards Universe</h1>
+      <p>Collect, trade, and explore the world of trading cards!</p>
+      <a href="cards.html" class="cta-button">Browse Cards</a>
+    </div>
 
     <footer>
-      <div class="footer-content">
-        <div class="copyright">
-          <p>&copy; 2024 Legendary Loot Emporium. All rights reserved.</p>
-        </div>
-
-        <div class="back-to-top">
-          <a href="#" class="back-to-top-link">Back to Top</a>
-        </div>
-
-        <div class="social-media">
-          <a href="https://facebook.com/YourPage" target="_blank"
-            ><i class="fab fa-facebook">Facebook</i></a
-          >
-          <a href="https://instagram.com/YourPage" target="_blank"
-            ><i class="fab fa-instagram">Instagram</i></a
-          >
-        </div>
-      </div>
+      <p>&copy; 2024 Trading Cards Universe</p>
     </footer>
   </body>
 </html>
