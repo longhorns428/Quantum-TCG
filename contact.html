@@ -1,68 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legendary Loot Emporium</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum TCG - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <header>
-      <h1>Legendary Loot Emporium</h1>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
-          <li><a href="./about.html">About</a></li>
-<!--           <li><a href="./contact.html">Contact</a></li>
- -->        </ul>
-      </nav>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="contact.html">Contact</a>
+        </nav>
     </header>
 
     <main>
-      <div class="container">
-        <h1>Contact Us</h1>
-        <form id="contact-form" method="post" action="#">
-          <div class="form-group">
+        <form id="contactForm">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
+            <input type="text" id="name" name="name" required><br>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-          <div class="form-group">
+            <input type="email" id="email" name="email" required><br>
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
-          <button type="submit">Submit</button>
+            <textarea id="message" name="message" required></textarea><br>
+
+            <button type="submit">Send Message</button>
         </form>
-      </div>
     </main>
 
-    <footer>
-      <div class="footer-content">
-        <div class="copyright">
-          <p>&copy; 2024 Legendary Loot Emporium. All rights reserved.</p>
-        </div>
-
-        <div class="back-to-top">
-          <a href="#" class="back-to-top-link">Back to Top</a>
-        </div>
-
-        <div class="social-media">
-          <a href="https://facebook.com/YourPage" target="_blank"
-            ><i class="fab fa-facebook">Facebook</i></a
-          >
-          <a href="https://instagram.com/YourPage" target="_blank"
-            ><i class="fab fa-instagram">Instagram</i></a
-          >
-        </div>
-      </div>
-    </footer>
-  </body>
+    <script src="script.js"></script>
+</body>
 </html>
